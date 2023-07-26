@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weathrly Network (Requests)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <main>
+      <img class="hero-image" src="https://media0.giphy.com/media/YLqBbdzxZDSNmo6QvM/giphy.gif" alt="">
+      <h1>Welcome to <span id="location">...loading</span></h1>
+      <form>
+        <label for="city-select">Select a location:</label>
+        <select id="city-select" type="dropdown">
+            <option>Death Valley</option>
+            <option>Mawsynram</option>
+            <option>Denali</option>
+        </select>
+      </form>
+      <form id="alert-form">
+        <label for="alert-input">Add Alert</label>
+        <input id="alert-input" type="text" />
+        <button type="submit">Submit</button>
+      </form>
+      <button id="delete-alert">Delete Alert</button>
+      <section> 
+        <h2 id="alert-message"></h2>
+        <div id="forecast">
+            <img src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="data is loading" />
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
