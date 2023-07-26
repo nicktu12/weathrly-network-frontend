@@ -16,9 +16,8 @@ locationDropdown.addEventListener('change', (e) => {
 
 alertForm.addEventListener('submit', (e) => {
     e.preventDefault()
-    alertInput.value
-    postNewAlert(alertInput.value)
-    console.log(alertInput.value)
+    // Task 3
+    // postNewAlert(alertInput.value)
 })
 
 deleteAlert.addEventListener('click', (e) => {
