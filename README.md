@@ -26,7 +26,7 @@ Available locations: `death-valley`, `mawsyram`, `denali`
 4. Add error handling that will not POST an empty message
 5. Create a function that will delete any current alerts
 6. Add error handling that will not delete an alert if there is no alert to delete
-7. SPICY: Create a closure that takes in our API base URL and saves that value for later, resulting in a function we call with our location only (fetch function w/ base URL is partially applied)
+7. SPICY: Create a closure that takes in our API base URL (OR request method) and saves that value for later, resulting in a function we call with our location only (fetch function w/ base URL (OR request method) is partially applied)
 
 ## REFLECTION QUESTIONS
 1. When and where can I update the DOM based on async data responses?
