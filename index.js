@@ -16,8 +16,6 @@ locationDropdown.addEventListener('change', (e) => {
 
 alertForm.addEventListener('submit', (e) => {
     e.preventDefault()
-    // Task 3
-    // postNewAlert(alertInput.value)
 })
 
 deleteAlert.addEventListener('click', (e) => {
@@ -29,35 +27,15 @@ const getDataByLocation = () => {
     return fetch(`http://localhost:3001/api/v1/${locationUrl}`)
         .then(res => res.json())
         .then(data => {
-            // Task 1
-            // populateHeader(data)
-            // populateForecast(data)
-            // populateAlertMessage(data)
-            // weatherData = data
+            console.log(data)
         })
 }
 
 const postNewAlert = (message) => {
-    // Task 3
-    // return fetch(`http://localhost:3001/api/v1/${locationUrl}`, {
-    //     method: 'POST',
-    //     body: JSON.stringify({ message }),
-    //     headers: {
-    //         'Content-Type': 'application/json'
-    //     }
-    // })
-    //     .then(res => res.json())
-    //     .then(data => console.log(data))
+
 }
 
-// Task 5
-// const deleteMessage = () => {
-//     return fetch(`http://localhost:3001/api/v1/${locationUrl}`, {
-//         method: 'DELETE',
-//     })
-//         .then(res => res.json())
-//         .then(data => console.log(data))
-// }
+
 
 const populateForecast = (data) => {
     const htmlUpdate = data.forecast.reduce((html, day) => {
@@ -74,17 +52,11 @@ const populateForecast = (data) => {
 }
 
 const populateHeader = (data) => {
-    // Task 2
-    // locationText.innerHTML = data.location
+
 }
 
 const populateAlertMessage = (data) => {
-    // Task 2
-    // if (data.announcements.warning) {
-    //     alertMessage.innerHTML = data.announcements.message
-    // } else {
-    //     alertMessage.innerHTML = ''
-    // }
+
 }
 
 // Tasks
