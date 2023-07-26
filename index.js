@@ -100,10 +100,5 @@ const populateAlertMessage = (data) => {
 // 1. When and where can I update the DOM based on async data responses?
 // 2. How can stale data on the DOM from previous network requests be cleared of the display?
 // 3. How do we ensure data remains up to date on the DOM when POST and DELETE requests happen?
-// 2. How can global variables be leveraged to store the value of async data?
-// 3. How can network request error handling be employed to let the user know they've done something wrong?
-
-
-
-
-// 4. Implement a closure around your fetch function to partially apply ??
+// 4. How can global variables be leveraged to store the value of async data?
+// 5. How can network request error handling be employed to let the user know they've done something wrong?
