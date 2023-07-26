@@ -61,18 +61,17 @@ const postNewAlert = (message) => {
 // }
 
 const populateForecast = (data) => {
-    // Task 2
-    // const htmlUpdate = data.forecast.reduce((html, day) => {
-    //     html += `
-    //         <article>
-    //             <h4>${day.day}</h4>
-    //             <p>High: ${day.high}</p>
-    //             <p>Low: ${day.low}</p>
-    //             <p>${day.condition}</p>
-    //         </article>`
-    //     return html
-    // }, '')
-    // forecastContainer.innerHTML = htmlUpdate
+    const htmlUpdate = data.forecast.reduce((html, day) => {
+        html += `
+            <article>
+                <h4>${day.day}</h4>
+                <p>High: ${day.high}</p>
+                <p>Low: ${day.low}</p>
+                <p>${day.condition}</p>
+            </article>`
+        return html
+    }, '')
+    forecastContainer.innerHTML = htmlUpdate
 }
 
 const populateHeader = (data) => {
@@ -81,11 +80,12 @@ const populateHeader = (data) => {
 }
 
 const populateAlertMessage = (data) => {
-    if (data.announcements.warning) {
-        alertMessage.innerHTML = data.announcements.message
-    } else {
-        alertMessage.innerHTML = ''
-    }
+    // Task 2
+    // if (data.announcements.warning) {
+    //     alertMessage.innerHTML = data.announcements.message
+    // } else {
+    //     alertMessage.innerHTML = ''
+    // }
 }
 
 // Tasks
