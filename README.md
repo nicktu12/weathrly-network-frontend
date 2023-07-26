@@ -34,3 +34,4 @@ Available locations: `death-valley`, `mawsyram`, `denali`
 3. How do we ensure data remains up to date on the DOM when POST and DELETE requests happen?
 4. How can global variables be leveraged to store the value of async data?
 5. How can network request error handling be employed to let the user know they've done something wrong?
+6. How can we indicate to users that data is still loading?
