@@ -11,7 +11,7 @@ This repo provides a front end to be used with [this backend repo](https://githu
 
 ## Endpoints
 
-Available locations: `death-valley`, `mawsyram`, `denali`
+Available locations: `death-valley`, `mawsynram`, `denali`
 
 | url | verb | req. body | 
 | ----|------|---------|
